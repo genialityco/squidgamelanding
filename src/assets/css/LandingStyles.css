@@ -1,0 +1,544 @@
+/* ===== Font Imports ===== */
+@font-face {
+	font-family: 'Game Of Squids';
+	src: url('../../assets/fonts/Game Of Squids.ttf') format('truetype'),
+     url('../../assets/fonts/Game Of Squids.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: 'Montechv';
+	src: url('../../assets/fonts/MONTECHV02-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+ /* ===== Global Styles ===== */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montechv', sans-serif;
+	/*background-color: #0d0d0d;*/
+	color: white;
+  }
+  
+  /* ===== Main Banner Header Styles ===== */
+  .main-banner {
+	width: 90%;
+	margin:  1% auto;
+	padding: 40px;
+	border: 2px solid #ff0033;
+	border-radius: 15px;
+	box-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033 inset;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+  }
+  
+  .header-box-glitch {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+  }
+  
+  .logo-left .logo-img {
+	height: 70px;
+	width: auto;
+  }
+  
+  .button-right .btn-niveles {
+	font-family: 'Montechv', sans-serif;
+	padding: 10px 20px;
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background 0.3s ease;
+  }
+  
+  .button-right .btn-niveles:hover {
+	background-color: #cc002a;
+  }
+  
+  .glitch {
+	position: relative;
+	color: white;
+	animation: glitch 1s infinite;
+  }
+  
+  @keyframes glitch {
+	0% { transform: translate(0); }
+	20% { transform: translate(-2px, 2px); }
+	40% { transform: translate(-2px, -2px); }
+	60% { transform: translate(2px, 2px); }
+	80% { transform: translate(2px, -2px); }
+	100% { transform: translate(0); }
+  }
+  
+  /* ===== Subheader Simple ===== */
+  .subheader {
+	background-color: #000;
+	text-align: center;
+	padding: 12px 0;
+	z-index: 1001;	
+  }
+  
+  .subheader p {
+	font-family: 'Montechv', sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+  }
+  
+  /* ===== Hero Banner ===== */
+  .hero-banner {
+	background: url('../..//assets/images/SLIDER_SQUID.jpg') center center / cover no-repeat; /* Ajusta si es otra imagen */
+	min-height: 92vh;
+	position: relative;
+	
+  }
+
+	  
+  .hero-logo {
+	display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 6%;
+    color: white;
+    font-family: 'Montechv', sans-serif;
+    text-align: center;
+    z-index: 2;
+    align-content: flex-end;
+  }
+	  
+  .hero-logo.left {
+	left: 5%;
+  }
+	  
+  .hero-logo.right {
+	right: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+	  
+  .hero-logo img {
+	width: 30%;
+  }
+	  
+  .hero-text-left {
+	font-size: 1rem;
+	max-width: 100%;
+	margin-bottom: 3.5%;
+  }
+
+  .hero-text-left p {
+	margin-top: 10%;
+	margin-bottom: 0 !important;
+  }
+  
+  /* ===== Intro Section ===== */
+  .intro-section {
+	background-color: transparent;
+	padding: 5% 20px 0;
+	text-align: center;
+  }
+  
+  .intro-container {
+	max-width: 60%;
+	margin: 0 auto;
+  }
+  
+  .intro-title {
+	font-family: 'Game Of Squids', sans-serif;
+	font-size: 4.5rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #D00024;
+  }
+  
+  .intro-text {
+	font-family: 'Montechv', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.2;
+	color: #000;
+	margin-bottom: 6%;
+  }
+  
+  .intro-logo img {
+	height: 80px;
+	width: auto;
+  }
+  
+  /* ===== Info Section ===== */
+  .info-section {
+	background-color: #0d0d0d;
+	color: white;
+	margin: 1% 0 5%;
+  }
+  
+  .info-container {
+	background: url('../..//assets/images/INSTRUCCIONES_2.jpg') center center / cover no-repeat; /* Ajusta si es otra imagen */
+	width: 100%;
+	height: 90vh;
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	flex-wrap: wrap;
+  }
+
+  .info-text {
+	flex: 1;
+	font-family: 'Montechv', sans-serif;
+  }
+
+  .info-text-left {
+	flex: 1;
+	text-align: left;
+	font-family: 'Montechv', sans-serif;
+	color: #000;
+	padding-left: 10%;
+  }
+  
+  .info-text-left h2 {
+	font-family: 'Game Of Squids', sans-serif;
+	font-size: 2.8rem;
+	margin-bottom: 5%;
+	color: #ff0033;
+	text-align: left;
+  }
+  
+  .info-text-left p {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	max-width: 38%;
+	text-align: left;
+  }
+  
+  .info-text-right {
+	flex: 1;
+	text-align: right;
+	font-family: 'Montechv', sans-serif;
+	color: white;
+	padding-right: 10%;
+  }
+  
+  .info-text-right h2 {
+	font-family: 'Game Of Squids', sans-serif;
+	font-size: 2.8rem;
+	margin-bottom: 10%;
+	color: #ff0033;
+	text-align: right;
+  }
+  
+  .info-text-right p {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	padding-left: 62%;
+	text-align: right;
+	color: #000;
+  }
+  
+  /* ===== Games Section ===== */
+  .games-section {
+	padding: 50px 0;
+  }
+  
+  .games-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	gap: 40px;
+	max-width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	align-items: start;
+  }
+  
+  .game-item {
+	background-color: #1a1a1a;
+	padding: 0;
+	border-radius: 0;
+	box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+	overflow: hidden;
+  }
+  
+  .game-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 0;
+  }
+  
+  .game-caption {
+	background-color: #D00024;
+	padding: 20px 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	font-family: 'Montechv', sans-serif;
+  }
+  
+  .game-caption h4.game-title {
+	margin: 0;
+	font-size: 2.3rem;
+	color: white;
+	font-family: 'Game Of Squids', sans-serif;
+	line-height: 1;
+  }
+  
+  .game-caption button {
+	padding: 5px 45px;
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Montechv', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+	box-shadow: 0 2px 5px 0 rgba(19, 18, 18, 0.5);
+  }
+  
+  .game-caption button:hover {
+	background-color: #f5f5f5;
+  }
+  
+  .game-description {
+    grid-column: 2;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	padding: 35% 12% ;
+}
+    
+  /* ===== Footer ===== */
+  .footer {
+	background-color: #D00024;
+	padding: 0 0 50px;
+	text-align: center;
+	position: relative;
+	z-index: 3;
+	margin-top: 0;
+  }
+
+  .footer-rounded {
+	background-color: #D00024;
+	height: 160px;
+	border-top-left-radius: 110px;
+	border-top-right-radius: 110px;
+	margin: 0 auto -60px;
+	max-width: 65%;
+	position: relative;
+	z-index: 3;
+	top: 20;
+  }
+  
+  .footer-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 70%;
+	margin: 0 auto;
+  }
+  
+  .footer-logo img {
+	width: 75%;
+	height: auto;
+	max-width: 100%;
+  }
+
+  .footer-logo-lebic img {
+	width: 40%;
+	height: auto;
+	max-width: 100%;
+  }
+  
+  .footer-symbols img {
+	width: 45%;
+	height: auto;
+	margin-bottom: 10px;
+  }
+  
+  .footer-symbols p {
+	margin: 0;
+	font-size: 1rem;
+	color: white;
+	font-weight: 600;
+	font-family: 'Montechv', sans-serif;}
+
+
+	/* ===== Responsive Design ===== */
+@media (max-width: 1024px) {
+	.main-banner {
+	  padding: 20px;
+	}
+	.hero-logo.left {
+	  left: 3%;
+	}
+	.hero-logo.right {
+	  right: 3%;
+	  width: 20%;
+	}
+	.intro-container {
+	  max-width: 90%;
+	}
+	.info-container {
+	  flex-direction: column;
+	  height: auto;
+	  padding: 20px;
+	}
+	.info-text-left,
+	.info-text-right {
+	  text-align: center;
+	  padding: 0 10%;
+	}
+	.info-text-left p,
+	.info-text-right p {
+	  max-width: 100%;
+	  padding-left: 0;
+	  text-align: center;
+	}
+	.games-grid {
+	  grid-template-columns: repeat(2, 1fr);
+	  max-width: 90%;
+	}
+	.game-description {
+	  grid-column: span 2;
+	  padding: 20% 5%;
+	}
+	.footer-container {
+	  flex-direction: column;
+	  gap: 30px;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.main-banner {
+		width: 95%;
+		padding: 20px;
+		top: 60px;
+	  }
+	  .header-box-glitch {
+		flex-direction: column;
+		padding: 0 10px;
+	  }
+	  .hero-banner {
+		background-size: cover;
+		background-position: center top;
+		min-height: 100vh;
+		padding-top: 200px;
+	  }
+	  .hero-logo {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		bottom: 5%;
+		width: 100%;
+		left: 0;
+		right: 0;
+	  }
+	  .hero-logo.left, .hero-logo.right {
+		position: relative;
+		left: 0;
+		right: 0;
+		justify-content: center;
+		width: 100%;
+	  }
+	  .hero-logo img {
+		width: 50%;
+		margin-bottom: 10px;
+	  }
+	  .hero-text-left {
+		font-size: 0.9rem;
+		margin-bottom: 10px;
+	  }
+	  .subheader p {
+		font-size: 0.9rem;
+	  }
+	.header-box-glitch {
+	  flex-direction: column;
+	  gap: 20px;
+	  padding: 0;
+	}
+	.hero-logo {
+	  position: relative;
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	}
+	.hero-logo.left,
+	.hero-logo.right {
+	  position: relative;
+	  left: auto;
+	  right: auto;
+	  width: 100%;
+	  justify-content: center;
+	}
+	.hero-logo img {
+	  width: 50%;
+	}
+	.intro-title {
+	  font-size: 2.5rem;
+	}
+	.intro-text {
+	  font-size: 1rem;
+	}
+	.games-grid {
+	  grid-template-columns: 1fr;
+	}
+	.game-caption h4.game-title {
+	  font-size: 1.6rem;
+	}
+	.game-caption button {
+	  font-size: 1rem;
+	  padding: 10px 20px;
+	}
+	.footer-logo img,
+	.footer-logo-lebic img,
+	.footer-symbols img {
+	  width: 60%;
+	}
+	.footer-symbols p {
+	  font-size: 0.9rem;
+	}
+  }
+  
+  @media (min-width: 1600px) {
+	.intro-title {
+	  font-size: 6rem;
+	}
+	.intro-text {
+	  font-size: 1.5rem;
+	}
+	.game-caption h4.game-title {
+	  font-size: 3rem;
+	}
+	.game-caption button {
+	  font-size: 1.4rem;
+	  padding: 10px 60px;
+	}
+	.info-text-left p,
+	.info-text-right p {
+	  font-size: 1.6rem;
+	}
+  }
+  
+  /* ===== Fin Media Queries Responsive Global ===== */
