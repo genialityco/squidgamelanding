@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function GamesSection() {
   return (
-    <section className="games-section">
+    <section id ="niveles"className="games-section">
       <div className="games-grid">
         <div className="game-item">
           <img src="/assets/images/JUEGOS-01.png" alt="Juego 1" />

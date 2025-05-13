@@ -104,6 +104,13 @@ body {
 	
   }
 
+  .hero-banner-puntuacion {
+	background: url('../..//assets/images/SLIDER_INTERNO.jpg') center center / cover no-repeat; /* Ajusta si es otra imagen */
+	min-height: 70vh;
+	position: relative;
+	
+  }
+
 	  
   .hero-logo {
 	display: flex;
@@ -263,6 +270,7 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	align-items: start;
+	position: relative;
   }
   
   .game-item {
@@ -384,161 +392,528 @@ body {
 	font-weight: 600;
 	font-family: 'Montechv', sans-serif;}
 
+	/* ===== diseño Pop-up ===== */
 
-	/* ===== Responsive Design ===== */
-@media (max-width: 1024px) {
+	.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../..//assets/images/SLIDER_SQUID.jpg') center center / cover no-repeat;
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;
+    z-index: 9999;
+    flex-wrap: wrap;
+    flex-direction: column;
+	padding-top: 1%;
+	}
+	.logo_lebic{
+		width: 60%;
+	}
+
+	.modal-content {
+	margin-top: 14%;
+	background: white;
+	color: black;
+	padding: 50px 30px;
+	border-radius: 12px;
+	width: 30%;
+	text-align: center;
+	}
+
+	.modal-content input {
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	}
+
+	.modal-content button {
+	padding: 10px 20px;
+	background-color: #D00024;
+	color: white;
+	border: none;
+	cursor: pointer;
+	}
+
+	.error {
+	color: red;
+	font-size: 0.9rem;
+	}
+
+	/* ===== fin diseño Pop-up ===== */
+
+	/* ===== Community Area (Ranking) ===== */
+	.community-container {
+	max-width: 70%;
+	margin: 3% auto;
+	padding: 20px;
+	/*background-color: #1a1a1a;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(255, 0, 51, 0.5);*/
+	text-align: center;
+	}
+
+	.espacio{
+		padding: 2%;
+	}
+
+	.community-title {
+	font-family: 'Game Of Squids', sans-serif;
+	font-size: 4.5rem;
+	margin-bottom: 30px;
+	color: #ff0033;
+	}
+
+	.community-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: sans-serif;
+	background-color: #111;
+	color: white;
+	}
+
+	.community-table th,
+	.community-table td {
+	padding: 1.5rem;
+	border: 1px solid #333;
+	text-align: center;
+	}
+
+	.community-table th {
+	background-color: #d00024;
+	font-weight: bold;
+	font-size: 1.5rem;
+	}
+
+	.community-table tr:nth-child(even) {
+	background-color: #222;
+	}
+
+	.community-table tr:hover {
+	background-color: #333;
+	}
+
+	.no-data {
+	font-family: 'Montechv', sans-serif;
+	font-size: 1.5rem;
+	color: white;
+	background-color: #222;
+	padding: 20px;
+	border-radius: 8px;
+	margin-top: 20px;
+	}
+
+	/* ===== Mi Ranking ===== */
+
+	.my-ranking {
+	margin: 5% auto 0;
+	max-width: 30%;
+	text-align: center;
+	font-family: 'Montechv', sans-serif;
+	}
+
+	.my-ranking table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #1a1a1a;
+	color: white;
+	overflow: hidden;
+	}
+
+	.my-ranking th, .my-ranking td {
+	padding: 12px;
+	border: 1px solid #333;
+	}
+
+	.my-ranking th {
+	background-color: #d00024;
+	font-family:  sans-serif;
+	font-size: 1.8rem;
+	}
+
+	.my-ranking td {
+	font-size: 1.5rem;
+	}
+
+	.my-ranking h3 {
+	font-size: 1.8rem;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: 'Montechv', sans-serif;
+	color: #d00024;
+	}
+
+	.ranking-user {
+	color: #d00024;
+	}
+
+	.ranking-score {
+	color: #fff;
+	font-weight: bold;
+	}
+	
+	/* ========== MEDIA QUERIES RESPONSIVE ========== */
+
+/* Monitores grandes (1800px y más) */
+	@media (max-width: 1800px) {
+	.main-banner { width: 95%; }
+	.intro-container, .footer-container { max-width: 80%; }
+	}
+
+/* Pantallas 1500px */
+	@media (max-width: 1500px) {
+	.intro-title { font-size: 4rem; }
+	.game-caption h4.game-title { font-size: 2rem; }
+	.game-caption button { font-size: 1.1rem; padding: 5px 30px; }
+	}
+
+/* Pantallas 1200px */
+	@media (max-width: 1200px) {
+	.header-box-glitch { padding: 0 20px; }
+	.games-grid { max-width: 90%; }
+	.intro-container { max-width: 90%; }
+	.footer-rounded { max-width: 80%; }
+	.footer-container { max-width: 90%; }
+	}
+
+/* Pantallas 992px */
+	@media (max-width: 992px) {
 	.main-banner {
-	  padding: 20px;
-	}
-	.hero-logo.left {
-	  left: 3%;
-	}
-	.hero-logo.right {
-	  right: 3%;
-	  width: 20%;
-	}
-	.intro-container {
-	  max-width: 90%;
-	}
-	.info-container {
-	  flex-direction: column;
-	  height: auto;
-	  padding: 20px;
-	}
-	.info-text-left,
-	.info-text-right {
-	  text-align: center;
-	  padding: 0 10%;
-	}
-	.info-text-left p,
-	.info-text-right p {
-	  max-width: 100%;
-	  padding-left: 0;
-	  text-align: center;
-	}
-	.games-grid {
-	  grid-template-columns: repeat(2, 1fr);
-	  max-width: 90%;
-	}
-	.game-description {
-	  grid-column: span 2;
-	  padding: 20% 5%;
-	}
-	.footer-container {
-	  flex-direction: column;
-	  gap: 30px;
-	}
-  }
-  
-  @media (max-width: 768px) {
-	.main-banner {
-		width: 95%;
-		padding: 20px;
-		top: 60px;
-	  }
-	  .header-box-glitch {
 		flex-direction: column;
-		padding: 0 10px;
-	  }
-	  .hero-banner {
-		background-size: cover;
-		background-position: center top;
-		min-height: 100vh;
-		padding-top: 200px;
-	  }
-	  .hero-logo {
+		padding: 20px;
+	}
+
+	.game-caption {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.info-container {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		bottom: 5%;
-		width: 100%;
-		left: 0;
-		right: 0;
-	  }
-	  .hero-logo.left, .hero-logo.right {
-		position: relative;
-		left: 0;
-		right: 0;
-		justify-content: center;
-		width: 100%;
-	  }
-	  .hero-logo img {
-		width: 50%;
-		margin-bottom: 10px;
-	  }
-	  .hero-text-left {
-		font-size: 0.9rem;
-		margin-bottom: 10px;
-	  }
-	  .subheader p {
-		font-size: 0.9rem;
-	  }
-	.header-box-glitch {
-	  flex-direction: column;
-	  gap: 20px;
-	  padding: 0;
+		padding: 5% 10px;
+		height: auto;
 	}
+
+	.info-text-left,
+	.info-text-right {
+		padding: 0 5%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.info-text-right p,
+	.info-text-left p {
+		padding: 0;
+		font-size: 1.3rem;
+	}
+
+	.community-table th,
+	.community-table td {
+		font-size: 0.9rem;
+		padding: 10px;
+	}
+
+	.community-title {
+		font-size: 1.5rem;
+	}
+	}
+
+/* Tablets (768px) */
+	@media (max-width: 768px) {
 	.hero-logo {
-	  position: relative;
-	  flex-direction: column;
-	  align-items: center;
-	  text-align: center;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
-	.hero-logo.left,
-	.hero-logo.right {
-	  position: relative;
-	  left: auto;
-	  right: auto;
-	  width: 100%;
-	  justify-content: center;
-	}
+
 	.hero-logo img {
-	  width: 50%;
+		width: 60%;
 	}
-	.intro-title {
-	  font-size: 2.5rem;
-	}
-	.intro-text {
-	  font-size: 1rem;
-	}
-	.games-grid {
-	  grid-template-columns: 1fr;
-	}
+
 	.game-caption h4.game-title {
-	  font-size: 1.6rem;
+		font-size: 1.6rem;
 	}
+
 	.game-caption button {
-	  font-size: 1rem;
-	  padding: 10px 20px;
+		font-size: 1rem;
+		padding: 8px 20px;
 	}
+
+	.games-grid {
+	/*	grid-template-columns: 1fr 1fr;*/
+	}
+
+	.footer-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
 	.footer-logo img,
 	.footer-logo-lebic img,
 	.footer-symbols img {
-	  width: 60%;
+		width: 60%;
 	}
+
 	.footer-symbols p {
-	  font-size: 0.9rem;
+		font-size: 0.9rem;
 	}
-  }
-  
-  @media (min-width: 1600px) {
+	}
+
+	/* Móviles (576px) */
+	@media (max-width: 576px) {
+	/*Componente, Header, subheader y herobanner*/
+	.header-box-glitch {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  	}
+
+	.header-box-glitch {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	}
+
+
+	.logo-left .logo-img {
+		width: 200px;
+		height: auto;
+	}
+
+	.subheader p {
+		font-size: 0.6rem;
+	}
+
+	.button-right .btn-niveles {
+		font-size: 0.6rem;
+		padding: 6px 6px;
+	}
+
+
+	.button-right {
+		display: block;
+	}
+
+	.subheader {
+		position: relative;
+		z-index: 10;
+	}
+
+	.main-banner {
+    width: 85%;
+    margin-top: 20px; /* separa del subheader */
+    padding: 3% 1%;
+	box-shadow: 0 0 5px #ff0033, 0 0 10px #ff0033 inset;
+  	}
+	.hero-banner{
+	min-height: 70vh;
+	}
+
+	.hero-logo {
+    flex-direction: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  	}
+	.hero-logo.left .hero-logo.right{
+		width: 50%;
+	}
+	.hero-logo.left img,
+	.hero-logo.right img {
+	width: 150px;
+	height: auto;
+	}
+
+	.hero-text-left {
+	display: none; /* Ocultamos texto si es necesario para móviles */
+	}
+	/*Fin de media seccion header, subheader y herobanner*/
+
+	/* Responsive PopUp Login */
+
+	.modal-content {
+	width: 80%;
+	}
+
+	.logo_lebic {
+		padding: 3% 0;
+		width: 100%;
+	}
+
+	.modal-content h2{
+		font-size: 1.2rem;
+	}
+
+	.modal-content{
+		margin-top: 70%;
+		background: #ffffffd7;
+	}
+
+	/*Fin Responsive PopUp Login*/
 	.intro-title {
-	  font-size: 6rem;
+		font-size: 2.2rem;
 	}
+
 	.intro-text {
-	  font-size: 1.5rem;
+		font-size: 1.1rem;
 	}
-	.game-caption h4.game-title {
-	  font-size: 3rem;
+
+	.intro-logo img {
+		height: 50px;
+		width: auto;
 	}
-	.game-caption button {
-	  font-size: 1.4rem;
-	  padding: 10px 60px;
+
+	/* Info.section */
+	
+	.info-container {
+		background: url('../..//assets/images/INSTRUCCIONES_V_MOBILE.2.png') center center / cover no-repeat; /* Ajusta si es otra imagen */
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	height: auto;
+    	padding: 40px 20px;
+    	/*background-position: center top;*/
 	}
+
+	.info-text-right{
+		margin-top: 60%;
+	}
+
+	.info-text-left{
+		margin-bottom: 60%;
+	}
+
+	.info-text-left,
+	.info-text-right {
+		flex: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.info-text-left h2,
+	.info-text-right h2 {
+		font-size: 2.2rem;
+        text-align: center;
+		line-height: 1.8rem;
+	}
+
 	.info-text-left p,
 	.info-text-right p {
-	  font-size: 1.6rem;
+		max-width: 100%;
+		font-size: 0.6rem;
+		padding: 0;
+		text-align: center;
 	}
-  }
+
+	/* Fin Inf.section */
+
+	/* Responsive seccion games */
+
+	.games-section {
+	padding: 20px 10px;
+	}
+
+	.games-grid {
+	grid-template-columns: 1fr;
+	gap: 20px;
+	max-width: 100%;
+	margin: 0 auto;
+	}
+
+	.game-item {
+	width: 100%;
+	margin: 0 auto;
+	}
+
+	.game-caption {
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	}
+
+	.game-caption h4.game-title {
+	font-size: 1rem;
+	margin-bottom: 10px;
+	}
+
+	.game-caption button {
+	font-size: 1rem;
+	padding: 6px 25px;
+	}
+	
+	.game-description {    
+		font-size: 1.4rem;
+		line-height: 1.6;
+		padding: 10% 10%;
+	}
+
+	/* Fin Responsive seccion games */
+
+	.community-table th,
+	.community-table td {
+		font-size: 0.8rem;
+		padding: 8px;
+	}
+
+	.community-title {
+		font-size: 1.8rem;
+	}
+
+	.info-text-left h2,
+	.info-text-right h2 {
+		font-size: 2rem;
+	}
+
+	.info-text-left p,
+	.info-text-right p {
+		font-size: 1.2rem;
+	}
+
+	.footer-rounded {
+		max-width: 80%;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+		margin: 0 auto -100px;
+	}
+
+	.footer-logo img, .footer-logo-lebic img, .footer-symbols img {
+        width: 40%;
+    }
+
+	    .footer-symbols p {
+        font-size: 0.6rem;
+    }
+
+	.my-ranking {
+		max-width: 90%;
+	}
+	
+	.my-ranking h3 {
+		font-size: 1.4rem;
+	}
+
+	.community-container {
+		max-width: 90%;
+		margin: 3% auto;
+		padding: 20px;
+		text-align: center;
+	}
+
+	}
   
   /* ===== Fin Media Queries Responsive Global ===== */
+
+  

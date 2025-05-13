@@ -1,6 +1,7 @@
-
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomeTwo from './pages/homes/HomeTwo';
+import Community from './pages/community/Community';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <HomeTwo />
+          </Route>
+          <Route path="/community">
+            <Community />
           </Route>
         </Switch>
       </Router>
