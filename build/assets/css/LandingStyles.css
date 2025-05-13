@@ -1,0 +1,326 @@
+/* ===== Font Imports ===== */
+@font-face {
+	font-family: 'Game Of Squids';
+	src: url('/assets/fonts/Game Of Squids.ttf') format('truetype'),
+		 url('/assets/fonts/Game Of Squids.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: 'Montechv';
+	src: url('/assets/fonts/MONTECHV02-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  /* ===== Global Styles ===== */
+  body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montechv', sans-serif;
+	background-color: #0d0d0d;
+	color: white;
+  }
+  
+  /* ===== Main Banner Header Styles ===== */
+  .main-banner {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 2px solid #050505;
+	border-radius: 15px;
+	box-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033 inset;
+	position: relative;
+	z-index: 1000;
+  }
+  
+  .header-box-glitch {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+  }
+  
+  .logo-left .logo-img {
+	height: 70px;
+	width: auto;
+  }
+  
+  .button-right .btn-niveles {
+	font-family: 'Montechv', sans-serif;
+	padding: 10px 20px;
+	font-size: 1rem;
+	background-color: #ff0033;
+	color: white;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background 0.3s ease;
+  }
+  
+  .button-right .btn-niveles:hover {
+	background-color: #cc002a;
+  }
+  
+  .glitch {
+	position: relative;
+	color: white;
+	animation: glitch 1s infinite;
+  }
+  
+  @keyframes glitch {
+	0% { transform: translate(0); }
+	20% { transform: translate(-2px, 2px); }
+	40% { transform: translate(-2px, -2px); }
+	60% { transform: translate(2px, 2px); }
+	80% { transform: translate(2px, -2px); }
+	100% { transform: translate(0); }
+  }
+  
+  /* ===== Subheader Simple ===== */
+  .subheader {
+	background-color: #000;
+	text-align: center;
+	padding: 12px 0;
+  }
+  
+  .subheader p {
+	font-family: 'Montechv', sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+  }
+  
+  /* ===== Hero Banner ===== */
+  .hero-banner {
+	background: linear-gradient(to bottom, #1c1c1c, #0d0d0d);
+	padding: 40px 0;
+	text-align: center;
+	position: relative;
+  }
+  
+  .hero-overlay {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  .hero-logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .hero-logo img {
+	height: 60px;
+	width: auto;
+	margin-bottom: 10px;
+  }
+  
+  .hero-text-left {
+	font-size: 0.9rem;
+	color: white;
+	font-family: 'Montechv', sans-serif;
+	text-align: center;
+	max-width: 200px;
+  }
+  
+  /* ===== Intro Section ===== */
+  .intro-section {
+	background-color: #0d0d0d;
+	padding: 60px 20px;
+	text-align: center;
+  }
+  
+  .intro-container {
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .intro-title {
+	font-family: 'Game Of Squids', sans-serif;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	color: #ff0033;
+  }
+  
+  .intro-text {
+	font-family: 'Montechv', sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	color: white;
+	margin-bottom: 20px;
+  }
+  
+  .intro-logo img {
+	height: 80px;
+	width: auto;
+  }
+  
+  /* ===== Info Section ===== */
+  .info-section {
+	background-color: #1c1c1c;
+	padding: 40px 20px;
+	text-align: center;
+  }
+  
+  .info-section h2 {
+	font-family: 'Game Of Squids', sans-serif;
+	font-size: 2rem;
+	margin-bottom: 15px;
+  }
+  
+  .info-section p {
+	font-family: 'Montechv', sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	color: white;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  /* ===== Games Section ===== */
+  .games-section {
+	padding: 50px 0;
+	background-color: #0d0d0d;
+  }
+  
+  .games-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	gap: 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	align-items: start;
+  }
+  
+  .game-item {
+	background-color: #1a1a1a;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  }
+  
+  .game-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+  }
+  
+  .game-caption {
+	margin-top: 10px;
+  }
+  
+  .game-caption h4.game-title {
+	margin: 0 0 10px;
+	font-size: 1.2rem;
+	color: white;
+	font-family: 'Game Of Squids', sans-serif;
+	letter-spacing: 1px;
+  }
+  
+  .game-caption button {
+	padding: 8px 16px;
+	background-color: #ff0033;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	font-family: 'Montechv', sans-serif;
+  }
+  
+  .game-caption button:hover {
+	background-color: #cc002a;
+  }
+  
+  .game-description {
+	grid-column: 2;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+  }
+  
+  /* ===== Survivencia / Dinámica Section ===== */
+  .survivencia-dinamica-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px 20px;
+	background-color: #0d0d0d;
+	gap: 40px;
+	flex-wrap: wrap;
+  }
+  
+  .survivencia-dinamica-section .title-block,
+  .survivencia-dinamica-section .dynamic-block {
+	flex: 1;
+	text-align: center;
+  }
+  
+  .survivencia-dinamica-section .image-block {
+	flex: 1;
+	text-align: center;
+  }
+  
+  .survivencia-dinamica-section h2 {
+	font-family: 'Game Of Squids', sans-serif;
+	font-size: 2rem;
+	margin: 0 0 10px;
+	color: white;
+  }
+  
+  .survivencia-dinamica-section img {
+	max-height: 250px;
+	width: auto;
+  }
+  
+  /* ===== Footer ===== */
+  .footer {
+	background-color: #d60a2e;
+	padding: 50px 0 30px;
+	text-align: center;
+	position: relative;
+	color: white;
+  }
+  
+  .footer-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .footer-logo img {
+	height: 70px;
+	max-width: 120px;
+  }
+  
+  .footer-symbols img {
+	height: 60px;
+	margin-bottom: 10px;
+  }
+  
+  .footer-symbols p {
+	margin: 0;
+	font-size: 0.8rem;
+	color: white;
+	font-weight: 600;
+	font-family: 'Montechv', sans-serif;
+  }
+  
