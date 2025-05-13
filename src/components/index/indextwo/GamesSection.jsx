@@ -9,28 +9,28 @@ export default function GamesSection() {
           <img src="/assets/images/JUEGOS-01.png" alt="Juego 1" />
           <div className="game-caption">
             <h4 className="game-title">Título<br />Juego</h4>
-            <button onClick={() => window.open('https://squidgenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
           </div>
         </div>
         <div className="game-item">
           <img src="/assets/images/JUEGOS-03.png" alt="Juego 2" />
           <div className="game-caption">
             <h4 className="game-title">Título<br />Juego</h4>
-            <button onClick={() => window.open('https://squidgenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
           </div>
         </div>
         <div className="game-item">
           <img src="/assets/images/JUEGOS-02.png" alt="Juego 3" />
           <div className="game-caption">
             <h4 className="game-title">Título<br />Juego</h4>
-            <button onClick={() => window.open('https://squidgenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
           </div>
         </div>
         <div className="game-item">
           <img src="/assets/images/JUEGOS-04.png" alt="Juego 4" />
           <div className="game-caption">
             <h4 className="game-title">Título<br />Juego</h4>
-            <button onClick={() => window.open('https://squidgenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
           </div>
         </div>
         <div className="game-description">
@@ -44,7 +44,7 @@ export default function GamesSection() {
           <img src="/assets/images/JUEGOS-05.png" alt="Juego 5" />
           <div className="game-caption">
             <h4 className="game-title">Título<br />Juego</h4>
-            <button onClick={() => window.open('https://squidgenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/', '_blank', 'noopener,noreferrer')}>Jugar</button>
           </div>
         </div>
       </div>
