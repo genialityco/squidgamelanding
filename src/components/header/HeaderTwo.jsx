@@ -15,7 +15,7 @@ export default function HeaderTwo() {
           </Link>
         </div>
         <div className="button-right">
-          <a href="#niveles" className="btn-niveles">NIVELES</a>
+          <a href="/#niveles" className="btn-niveles">NIVELES</a>
           <Link to="/community" className="btn-niveles">PUNTUACIÓN</Link>
         </div>
       </div>
