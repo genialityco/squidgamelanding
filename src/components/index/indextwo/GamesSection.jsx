@@ -15,7 +15,7 @@ export default function GamesSection() {
 
           <div className="game-caption">
             <h4 className="game-title">Luz roja<br />Luz verde</h4>
-            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=1', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=1','_self')}>Jugar</button>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ export default function GamesSection() {
 
             <div className="game-caption">
               <h4 className="game-title">Galleta Dalgona</h4>
-              <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=2', '_blank', 'noopener,noreferrer')}>Jugar</button>
+              <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=2','_self')}>Jugar</button>
             </div>
         </div>
 
@@ -44,7 +44,7 @@ export default function GamesSection() {
 
           <div className="game-caption">
             <h4 className="game-title">Tira y afloja</h4>
-            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=3', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=3','_self')}>Jugar</button>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ export default function GamesSection() {
 
           <div className="game-caption">
             <h4 className="game-title">Canicas</h4>
-            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=4', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=4','_self')}>Jugar</button>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ export default function GamesSection() {
 
           <div className="game-caption">
             <h4 className="game-title">Puente de<br />Cristal</h4>
-            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=5', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=5','_self')}>Jugar</button>
           </div>        
         </div>
 
@@ -86,7 +86,7 @@ export default function GamesSection() {
 
           <div className="game-caption">
             <h4 className="game-title">Supervivencia</h4>
-            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=6', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=6','_self')}>Jugar</button>
           </div>
         </div>
       {/*<div className="game-description">
