@@ -20,21 +20,36 @@ export default function GamesSection() {
         </div>
 
         <div className="game-item">
-          <img src="/assets/images/JUEGOS-03.png" alt="Juego 2" />
+          <img src="/assets/images/JUEGOS-06.png" alt="Juego 2" />
             <div className="game-overlay">
               <p className="game-description-">
-                 Juego coreano infantil con reglas complejas. El objetivo es empujar al oponente fuera del “cuerpo del calamar”.
+                 Consiste en recortar una figura (estrella, paraguas, círculo o triángulo) de una delgada galleta sin romperla.
+              </p>
+            </div>
+
+            <div className="game-caption">
+              <h4 className="game-title">Galleta Dalgona</h4>
+              <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=2', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            </div>
+        </div>
+
+        <div className="game-item">
+          <img src="/assets/images/TIRA-Y-AFLOJA.png" alt="Juego 3" />
+          
+            <div className="game-overlay">
+              <p className="game-description-">
+                 Juego tradicional por equipos donde deben vencer al oponente arrastrándolo fuera de una plataforma elevada.
               </p>
             </div>
 
           <div className="game-caption">
-            <h4 className="game-title">El Juego<br />del Calamar</h4>
-            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=6', '_blank', 'noopener,noreferrer')}>Jugar</button>
+            <h4 className="game-title">Tira y afloja</h4>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=3', '_blank', 'noopener,noreferrer')}>Jugar</button>
           </div>
         </div>
 
         <div className="game-item">
-          <img src="/assets/images/JUEGOS-02.png" alt="Juego 3" />
+          <img src="/assets/images/JUEGOS-02.png" alt="Juego 4" />
             <div className="game-overlay">
               <p className="game-description-">
                  Los jugadores forman parejas y compiten con canicas; el objetivo es quedarse con todas las del otro.
@@ -48,7 +63,7 @@ export default function GamesSection() {
         </div>
 
         <div className="game-item">
-          <img src="/assets/images/JUEGOS-04.png" alt="Juego 4" />
+          <img src="/assets/images/JUEGOS-04.png" alt="Juego 5" />
             <div className="game-overlay">
               <p className="game-description-">
                  Los jugadores deben cruzar un puente de paneles de vidrio, algunos de los cuales se rompen al pisarlos.
@@ -58,42 +73,29 @@ export default function GamesSection() {
           <div className="game-caption">
             <h4 className="game-title">Puente de<br />Cristal</h4>
             <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=5', '_blank', 'noopener,noreferrer')}>Jugar</button>
-          </div>
+          </div>        
         </div>
 
         <div className="game-item">
-          <img src="/assets/images/JUEGOS-06.png" alt="Juego 5" />
+          <img src="/assets/images/SUPER-VIVENCIA.png" alt="Juego 6" />
             <div className="game-overlay">
               <p className="game-description-">
-                 Consiste en recortar una figura (estrella, paraguas, círculo o triángulo) de una delgada galleta sin romperla.
+                 Juego coreano infantil con reglas complejas. El objetivo es empujar al oponente fuera del “cuerpo del calamar”.
               </p>
             </div>
 
-            <div className="game-caption">
-              <h4 className="game-title">Juego de la<br />Galleta Dalgona</h4>
-              <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=2', '_blank', 'noopener,noreferrer')}>Jugar</button>
-            </div>
+          <div className="game-caption">
+            <h4 className="game-title">Supervivencia</h4>
+            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=6', '_blank', 'noopener,noreferrer')}>Jugar</button>
+          </div>
         </div>
-        {/*<div className="game-description">
+      {/*<div className="game-description">
           <p>
             Prepárense para una capacitación en vivo hecha juego, donde cada decisión,
             estrategia y reflejo rápido los acercará a la victoria. Aquí no solo se aprende…
             se compite, se sobrevive y se gana.
           </p>
         </div>*/}
-        <div className="game-item">
-          <img src="/assets/images/JUEGOS-05.png" alt="Juego 6" />
-            <div className="game-overlay">
-              <p className="game-description-">
-                 Juego tradicional por equipos donde deben vencer al oponente arrastrándolo fuera de una plataforma elevada.
-              </p>
-            </div>
-
-          <div className="game-caption">
-            <h4 className="game-title">Tira y afloja</h4>
-            <button onClick={() => window.open('https://calamargenfar.netlify.app/?chooseGame=3', '_blank', 'noopener,noreferrer')}>Jugar</button>
-          </div>
-        </div>
       </div>
     </section>
   );
