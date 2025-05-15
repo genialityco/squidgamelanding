@@ -194,7 +194,7 @@ body {
   .info-container {
 	background: url('../..//assets/images/INSTRUCCIONES_2.jpg') center center / cover no-repeat; /* Ajusta si es otra imagen */
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	max-width: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -214,7 +214,7 @@ body {
 	text-align: left;
 	font-family: 'Montechv', sans-serif;
 	color: #000;
-	padding-left: 10%;
+	padding-left: 6%;
   }
   
   .info-text-left h2 {
@@ -226,7 +226,7 @@ body {
   }
   
   .info-text-left p {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	line-height: 1.4;
 	max-width: 44%;
 	text-align: left;
@@ -237,7 +237,7 @@ body {
 	text-align: right;
 	font-family: 'Montechv', sans-serif;
 	color: white;
-	padding-right: 10%;
+	padding-right: 6%;
   }
   
   .info-text-right h2 {
@@ -249,7 +249,7 @@ body {
   }
   
   .info-text-right p {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	line-height: 1.4;
 	padding-left: 50%;
 	text-align: right;
@@ -603,27 +603,28 @@ body {
 	.main-banner { width: 95%; }
 	.intro-container, .footer-container { max-width: 80%; }
 	.info-container {
-		height: 90vh;
+		height: 85vh;
 	}
 	.games-grid {max-width: 80%;}
 	.game-description {font-size: 1.3rem;}
-	.game-caption h4.game-title {font-size: 1.5rem;}
+	.game-caption h4.game-title {font-size: 1.1rem;}
+	.game-caption button {font-size: 0.85rem;}
 	.info-text-right{padding-right: 4%;} 
 	.info-text-left{
 		max-width: 50%;
 		padding-left: 4%;
 	}
 	
-	.info-text-left p {font-size: 1.2rem;}
+	.info-text-left p {font-size: 0.9rem;}
 	.info-text-right p{
-		font-size: 1.2rem;
+		font-size: 0.9rem;
 		padding-left: 53%;
 	}
 	.info-text-left h2 {
 		font-size: 2.2rem;
 		line-height: 1.9rem;
 	}
-	.info-text-right h2 {font-size: 2.2rem;	}
+	.info-text-right h2 {font-size: 2.2rem; margin-bottom: 4%;	}
 
 	.footer-container {flex-wrap: nowrap;}}
 
@@ -656,10 +657,10 @@ body {
 	}
 	
 	.info-text-left p {
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 	.info-text-right p{
-		font-size: 1rem;
+		font-size: 0.8rem;
 		padding-left: 53%;
 	}
 	.info-text-left h2 {
@@ -668,6 +669,7 @@ body {
 	}
 	.info-text-right h2 {
 		font-size: 2.2rem;
+		margin-bottom: 6%;
 	}
 	.intro-logo img {
 		height: auto;
@@ -722,7 +724,7 @@ body {
 	}
 	
 	.info-container{
-		height: 64vh;
+		height: 80vh;
 	}
 	.info-text-left, .info-text-right {
     	padding-left: 4%;
@@ -733,11 +735,11 @@ body {
 	}
 
 	.info-text-left p {
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 		max-width: 50%;
 	}
 	.info-text-right p{
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 	}
 	}
 
@@ -783,11 +785,11 @@ body {
 	}
 
 	.info-text-left p {
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 		max-width: 50%;
 	}
 
-	.info-text-right p {font-size: 0.8rem;}
+	.info-text-right p {font-size: 0.6rem;}
 	}
 
 /* Pantallas 992*/
@@ -818,12 +820,12 @@ body {
 	.info-text-right h2, .info-text-left h2{font-size: 1.6rem;}
 
 	.info-text-left p {
-		font-size: 0.7rem;
+		font-size: 0.5rem;
 		max-width: 50%;
 	}
 
 	.info-text-right p {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         padding-left: 40%;
     }
 	  
@@ -894,7 +896,7 @@ body {
 	}
 
 	.info-text-left p, .info-text-right p {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
 	.info-text-left h2, .info-text-right h2{
@@ -1006,11 +1008,11 @@ body {
 	}
 
 	.info-text-right{
-		margin-top: 50%;
+		margin-top: 70%;
 	}
 
 	.info-text-left{
-		margin-bottom: 50%;
+		margin-bottom: 40%;
 	}
 
 	.info-text-left,
@@ -1028,6 +1030,8 @@ body {
         text-align: center;
 		line-height: 1.8rem;
 	}
+
+	.info-text-right h2 {margin-bottom: 3%;}
 
 	.info-text-left p,
 	.info-text-right p {
