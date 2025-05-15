@@ -724,7 +724,7 @@ body {
 	}
 	
 	.info-container{
-		height: 80vh;
+		height: 70vh;
 	}
 	.info-text-left, .info-text-right {
     	padding-left: 4%;
@@ -877,7 +877,7 @@ body {
 	.game-caption{ padding: 10px 18px; }
 
 	.game-caption h4.game-title {
-		font-size: 1.2rem;
+		font-size: 0.7rem;
 	}
 
 	.game-caption button {
@@ -887,16 +887,13 @@ body {
 
 	.game-description{font-size: 0.85rem;}
 
-	.games-grid {
-	/*	grid-template-columns: 1fr 1fr;*/
-	}
 
 	.info-container{
 		height: 40vh;
 	}
 
 	.info-text-left p, .info-text-right p {
-        font-size: 0.5rem;
+        font-size: 0.45rem;
     }
 
 	.info-text-left h2, .info-text-right h2{
