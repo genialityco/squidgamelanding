@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as XLSX from "xlsx";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import app from "./firebase";
+import app from "../../firebase/firebase.js";
 
 const BulkUserUploader = () => {
   const [status, setStatus] = useState("");
