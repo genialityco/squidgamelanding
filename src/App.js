@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomeTwo from './pages/homes/HomeTwo';
 import Community from './pages/community/Community';
+import BulkUserUploader from './pages/admin/BulkUserUploader';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
           </Route>
           <Route path="/community">
             <Community />
+          </Route>
+          <Route path="/uploader-users">
+            <BulkUserUploader />
           </Route>
         </Switch>
       </Router>
