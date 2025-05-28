@@ -6,6 +6,8 @@ import app from "../../firebase/firebase.js";
 const BulkUserUploader = () => {
   const [status, setStatus] = useState("");
 
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
     if (!file) return;
@@ -16,7 +18,6 @@ const BulkUserUploader = () => {
     const jsonData = XLSX.utils.sheet_to_json(sheet);
 
     const auth = getAuth(app);
-
     const results = [];
 
     for (const row of jsonData) {
@@ -26,8 +27,14 @@ const BulkUserUploader = () => {
           await createUserWithEmailAndPassword(auth, email.trim(), "123456");
           results.push({ email, status: "✅ Creado" });
         } catch (error) {
-          results.push({ email, status: `❌ Error: ${error.code}` });
+          if (error.code === "auth/email-already-in-use") {
+            results.push({ email, status: "🟡 Ya existe" });
+          } else {
+            results.push({ email, status: `❌ Error: ${error.code}` });
+          }
         }
+
+        await sleep(500); // Previene bloqueo por muchas solicitudes
       }
     }
 

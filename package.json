@@ -12,6 +12,7 @@
     "ajv": "^6.12.6",
     "aos": "^2.3.4",
     "firebase": "^11.7.3",
+    "firebase-admin": "^13.4.0",
     "google-maps": "^4.3.3",
     "jquery": "^3.6.0",
     "magnific-popup": "^1.1.0",

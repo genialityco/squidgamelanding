@@ -1,15 +1,15 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAD6tkYtcVJqBIirwSMePmGiM6TNHu8MZ0",
-    authDomain: "game-calamar.firebaseapp.com",
-    projectId: "game-calamar",
-    storageBucket: "game-calamar.firebasestorage.app",
-    messagingSenderId: "557519792859",
-    appId: "1:557519792859:web:15a46af616dc4642d0fafe",
-    measurementId: "G-N07Q2MH81P"
+  apiKey: "AIzaSyBSDCBoO53_QqeIBFF_GSUyR81nUS27jHU",
+  authDomain: "calamar2.firebaseapp.com",
+  projectId: "calamar2",
+  storageBucket: "calamar2.firebasestorage.app",
+  messagingSenderId: "259797119644",
+  appId: "1:259797119644:web:cb85fd9ebc542b90923359",
+  measurementId: "G-ZP7H276P1V",
 };
 
 // Inicializa Firebase
